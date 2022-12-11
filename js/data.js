@@ -1,15 +1,3 @@
-const projects = [
-  {
-    image: "./images/github-gallery.png",
-    title: "GitHub Repo Gallery",
-    description:
-      "This JavaScript powered interactive website allows a user to take a peek and search my GitHub repo! This is all made possible by async/await fetches to the awesome GitHub API!",
-    skills: ["API", " DOM Manipulation", " JavaScript", " Async/Await"],
-    tools: ["GitHub", " GitHub Pages", " Command Line"],
-    id: 1,
-  },
-];
-
 const skills = [
   { skill: "HTML and CSS", id: 1 },
   { skill: "JavaScript", id: 2 },
