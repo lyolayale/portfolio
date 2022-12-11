@@ -38,7 +38,7 @@ class App extends React.Component {
           {this.state.projects.map(project => {
             return (
               <section key={project.id} className="project">
-                <img src={project.img} alt="Project image" />
+                <img src={project.image} alt="Project image" />
                 <h3>{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="skill-set">
