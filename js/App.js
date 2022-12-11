@@ -52,6 +52,7 @@ class App extends React.Component {
                   </p>
                 </div>
                 <button>Live Page</button>
+                <img src="./images/github-gallery.png" alt="Inline image" />
               </section>
             );
           })}
