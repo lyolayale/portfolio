@@ -1,6 +1,7 @@
 const Projects = [
   {
-    image: "../../images/github-gallery.png",
+    image:
+      "https://images.pexels.com/photos/11719056/pexels-photo-11719056.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
     title: "GitHub Repo Gallery",
     description:
       "This JavaScript powered interactive website allows a user to take a peek and search my GitHub repo! This is all made possible by async/await fetches to the awesome GitHub API!",
