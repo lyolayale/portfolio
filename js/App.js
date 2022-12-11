@@ -6,9 +6,9 @@ class App extends React.Component {
       { item: "about", id: 3 },
       { item: "contact me", id: 4 },
     ],
-    projects: Projects,
-    skills: DevSkills,
-    stack: TechStack,
+    projects,
+    skills,
+    stack,
   };
   render() {
     return (
@@ -52,7 +52,6 @@ class App extends React.Component {
                   </p>
                 </div>
                 <button>Live Page</button>
-                <img src="./images/github-gallery.png" alt="Inline image" />
               </section>
             );
           })}

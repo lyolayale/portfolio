@@ -1,4 +1,4 @@
-const Projects = [
+const projects = [
   {
     image: "./images/github-gallery.png",
     title: "GitHub Repo Gallery",
@@ -10,7 +10,7 @@ const Projects = [
   },
 ];
 
-const DevSkills = [
+const skills = [
   { skill: "HTML and CSS", id: 1 },
   { skill: "JavaScript", id: 2 },
   { skill: "React", id: 3 },
@@ -19,7 +19,7 @@ const DevSkills = [
   { skill: "Git and GitHub", id: 6 },
 ];
 
-const TechStack = [
+const stack = [
   { skill: "Chrome DevTools", id: 1 },
   { skill: "GitHub Pages", id: 2 },
   { skill: "Figma", id: 3 },
