@@ -17,6 +17,57 @@ class App extends React.Component {
         link: "https://lyolayale.github.io/github-repo-gallery/",
         id: 1,
       },
+
+      {
+        image: "./images/name-tag-generator.png",
+        title: "Name Tag Generator",
+        description:
+          "This program is powered by the React Lifecycle Methods and in conjunction with the local storage methods, allowing the user to have fun creating and saving new name tags!",
+        skills: ["ES6", " JSX", " Data Flow Management"],
+        tools: ["CodeSandbox", " GitHub", " Commmand Line"],
+        link: "https://y8cmmn.csb.app/",
+        id: 2,
+      },
+      {
+        image: "./images/guess-the-word-game.png",
+        title: "Guess the Word",
+        description:
+          "This JavaScript powered program uses async/await, JS methods and JS conditionals,  allowing  the user to have a fun and interactive time trying to guess the correct “word”!",
+        skills: [
+          "DOM Manipulation",
+          " Vanilla JavaScript",
+          " Async/Await",
+          "Event Listeners",
+        ],
+        tools: ["GitHub", " GitHub Pages", " Command Line"],
+        link: "https://lyolayale.github.io/guess-the-word/",
+        id: 3,
+      },
+      {
+        image: "./images/sticky-notes.png",
+        title: "Sticky Notes",
+        description:
+          "This JavaScript powered interactive website allows a user to take a peek and search my GitHub repo! This is all made possible by async/await fetches to the awesome GitHub API!",
+        skills: ["ES6", " JSX", " Data Flow Management", " Command Line"],
+        tools: ["CodeSandbox", " GitHub", " Command Line"],
+        link: "https://tmeer1.csb.app/",
+        id: 4,
+      },
+      {
+        image: "./images/unplugged.png",
+        title: "Unplugged",
+        description:
+          "This fun, multi-page website demonstrates how awesome CSS media queries and CSS Flex-box combined with the “mobile first” design pattern can work in harmony with each other!",
+        skills: [
+          "CSS/Flexbox",
+          " HTML5",
+          " Responsive Design",
+          " Media Queries",
+        ],
+        tools: ["Photoshop", " Photopea", " GitHub"],
+        link: "https://lyolayale.github.io/unplugged/",
+        id: 5,
+      },
     ],
     year: new Date().getFullYear(),
     me: "./images/profile.png",
@@ -46,54 +97,62 @@ class App extends React.Component {
           </section>
         </header>
         {/* project list */}
-        <section className="project-list">
+        <section className="project-list-wrapper">
           <h2>Projects</h2>
-          {this.state.projects.map(project => {
-            return (
-              <section key={project.id} className="project">
-                <a href={project.link} target="_blank">
-                  <img src={project.image} alt="Project image" />
-                </a>
-                <h3>{project.title}</h3>
-
-                <p className="project-description">{project.description}</p>
-                <div className="skill-set">
-                  <p>
-                    <span>Skills: </span>
-                    {project.skills}
-                  </p>
-                  <p>
-                    <span>Tools: </span>
-                    {project.tools}
-                  </p>
-                </div>
-                <a href={project.link} target="_blank">
-                  <button>Live Page</button>
-                </a>
-              </section>
-            );
-          })}
+          <div className="project-list">
+            {this.state.projects.map(project => {
+              return (
+                <section key={project.id} className="project">
+                  <a href={project.link} target="_blank">
+                    <img src={project.image} alt="Project image" />
+                  </a>
+                  <h3>{project.title}</h3>
+                  <div className="project-description-wrapper">
+                    <p className="project-description">{project.description}</p>
+                    <div className="skill-set">
+                      <p>
+                        <span>Skills: </span>
+                        {project.skills}
+                      </p>
+                      <p>
+                        <span>Tools: </span>
+                        {project.tools}
+                      </p>
+                    </div>
+                  </div>
+                  <a href={project.link} target="_blank">
+                    <button>Live Page</button>
+                  </a>
+                </section>
+              );
+            })}
+          </div>
         </section>
         {/* skills */}
-        <section className="skills">
+        <section className="skills-wrapper">
           <h3>Skills</h3>
-
-          <ul className="developer-skills">
-            <h4>Developer Skills</h4>
-            {this.state.skills.map(project => (
-              <li key={project.id}>
-                <p>{project.skill}</p>
-              </li>
-            ))}
-          </ul>
-          <ul className="tech-stack">
-            <h4>Tech Stack</h4>
-            {this.state.stack.map(project => (
-              <li key={project.id}>
-                <p>{project.skill}</p>
-              </li>
-            ))}
-          </ul>
+          <div className="skills">
+            <ul className="developer-skills">
+              <h4>Developer Skills</h4>
+              <div className="skills-container">
+                {this.state.skills.map(project => (
+                  <li key={project.id}>
+                    <p>{project.skill}</p>
+                  </li>
+                ))}
+              </div>
+            </ul>
+            <ul className="tech-stack">
+              <h4>Tech Stack</h4>
+              <div className="tech-stack-container">
+                {this.state.stack.map(project => (
+                  <li key={project.id}>
+                    <p>{project.skill}</p>
+                  </li>
+                ))}
+              </div>
+            </ul>
+          </div>
         </section>
         <section className="about-me">
           <div className="img-wrapper">
@@ -121,20 +180,28 @@ class App extends React.Component {
         </section>
         <footer>
           <h2>Let's Connect</h2>
-          <h3>Hire me</h3>
-          <div className="contact">
-            <p>281-536-3681</p>
-            <p>lyolayale19@gmail.com</p>
-          </div>
-          <h4 className="follow-me">Follow me</h4>
-          <div className="social-media">
-            <i className="fa-brands fa-linkedin-in"></i>
-            <i className="fa-brands fa-github"></i>
-          </div>
-          <h4 className="meet-me">Meet me</h4>
-          <div className="meet-up">
-            <p>East Texas</p>
-            <p>Lets go to meetups together!</p>
+          <div className="footer-wrapper">
+            <section className="hire-me-container">
+              <h3>Hire me</h3>
+              <div className="contact">
+                <p>281-536-3681</p>
+                <p>lyolayale19@gmail.com</p>
+              </div>
+            </section>
+            <section className="follow-me-container">
+              <h4 className="follow-me">Follow me</h4>
+              <div className="social-media">
+                <i className="fa-brands fa-linkedin-in"></i>
+                <i className="fa-brands fa-github"></i>
+              </div>
+            </section>
+            <section className="meet-up-container">
+              <h4 className="meet-me">Meet me</h4>
+              <div className="meet-up">
+                <p>East Texas</p>
+                <p>Lets go to meetups together!</p>
+              </div>
+            </section>
           </div>
           <p className="copyright">
             &copy; Copyright {this.state.year} | Eric McKee
