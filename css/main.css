@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-decoration: none;
 }
 
 html,
@@ -56,6 +57,7 @@ header {
   background-color: #e8eff7;
   margin-bottom: 50px;
   padding: 30px;
+  width: 100%;
 }
 
 nav {
@@ -215,14 +217,14 @@ nav li:hover {
 .skills {
   background-color: #e8eff7;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
   /* margin-top: 20px; */
-  margin-bottom: 40px;
+  /* margin-bottom: 80px; */
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   gap: 40px;
   width: 100%;
 }
@@ -235,7 +237,7 @@ nav li:hover {
   font-size: 20px;
 }
 
-/* developer skill */
+/* developer skill & tech stack */
 
 .developer-skills,
 .tech-stack {
@@ -255,7 +257,7 @@ nav li:hover {
   margin-bottom: 16px;
   padding: 20px;
   width: 100%;
-  min-width: 350px;
+  min-width: 300px;
   text-transform: uppercase;
   z-index: 1;
   transition: all 0.7s;
@@ -285,4 +287,119 @@ nav li:hover {
 .tech-stack p:hover:before {
   border-radius: 5px;
   left: 0;
+}
+
+/* .tech-stack {
+  margin-bottom: 80px;
+} */
+
+/* About me */
+
+.about-me {
+  width: 100%;
+  /* background-color: #f8d697; */
+  padding-bottom: 80px;
+  margin-top: 80px;
+}
+
+.img-wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+.about-me img {
+  background-color: #000;
+  width: 100%;
+  min-width: 330px;
+  height: 500px;
+  margin: auto;
+  object-fit: cover;
+}
+
+.about-me-body {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  line-height: 1.5;
+}
+
+.about-me-body h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about-me-body h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.about-me-body h4 {
+  font-size: 16px;
+}
+
+.about-me-body p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.about-me-body p:last-child {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #e8eff7;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+footer .contact p,
+footer .meet-up p {
+  font-size: 16px;
+  margin: 8px;
+  text-align: center;
+}
+
+footer .social-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 60px;
+}
+
+footer h2,
+footer .contact,
+footer .social-media,
+footer .meet-up,
+footer .copyright {
+  margin-bottom: 30px;
+}
+
+footer h2,
+footer .meet-me {
+  font-size: 28px;
+}
+
+footer h3,
+footer .follow-me {
+  font-size: 24px;
+}
+
+i {
+  font-size: 30px;
+}
+
+footer .copyright {
+  font-size: 16px;
 }

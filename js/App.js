@@ -14,9 +14,12 @@ class App extends React.Component {
           "This JavaScript powered interactive website allows a user to take a peek and search my GitHub repo! This is all made possible by async/await fetches to the awesome GitHub API!",
         skills: ["API", " DOM Manipulation", " JavaScript", " Async/Await"],
         tools: ["GitHub", " GitHub Pages", " Command Line"],
+        link: "https://lyolayale.github.io/github-repo-gallery/",
         id: 1,
       },
     ],
+    year: new Date().getFullYear(),
+    me: "./images/profile.png",
     skills,
     stack,
   };
@@ -35,7 +38,7 @@ class App extends React.Component {
           </nav>
 
           <section className="intro">
-            <h1>Hello there, I'm Eric McKee!</h1>
+            <h1>Hello, I'm Eric McKee!</h1>
             <h2>
               I'm a Front End Web Developer who creates and designs beautiful,
               memeorable websites and programs.
@@ -48,8 +51,11 @@ class App extends React.Component {
           {this.state.projects.map(project => {
             return (
               <section key={project.id} className="project">
-                <img src={project.image} alt="Project image" />
+                <a href={project.link} target="_blank">
+                  <img src={project.image} alt="Project image" />
+                </a>
                 <h3>{project.title}</h3>
+
                 <p className="project-description">{project.description}</p>
                 <div className="skill-set">
                   <p>
@@ -61,7 +67,9 @@ class App extends React.Component {
                     {project.tools}
                   </p>
                 </div>
-                <button>Live Page</button>
+                <a href={project.link} target="_blank">
+                  <button>Live Page</button>
+                </a>
               </section>
             );
           })}
@@ -87,6 +95,51 @@ class App extends React.Component {
             ))}
           </ul>
         </section>
+        <section className="about-me">
+          <div className="img-wrapper">
+            <img src={this.state.me} alt="Profile Image" />
+          </div>
+          <section className="about-me-body">
+            <h2>Hello! I'm Eric McKee</h2>
+            <h3>
+              I'm a Front End Web Developer with a passion for creating clean,
+              responsive websites.
+            </h3>
+            <p>
+              I've always been interested in computers but never thought I would
+              actually learn how to do the whole computer thing, but here I am!
+              Due to the COVID situation a decided to go back to school and
+              finish my bachelors degree due to being laid off, I felt so
+              invigorated by obtaining my degree, I was like ... "What else can
+              I do?" And, here we are folks, lol. When I'm not on the computer
+              trying to learn or create something, I enjoy watching 80's movies
+              and listening to 90's music, eating too much Skittles and drinking
+              too much coffee.
+            </p>
+            <p>Can't wait to work with you!</p>
+          </section>
+        </section>
+        <footer>
+          <h2>Let's Connect</h2>
+          <h3>Hire me</h3>
+          <div className="contact">
+            <p>281-536-3681</p>
+            <p>lyolayale19@gmail.com</p>
+          </div>
+          <h4 className="follow-me">Follow me</h4>
+          <div className="social-media">
+            <i className="fa-brands fa-linkedin-in"></i>
+            <i className="fa-brands fa-github"></i>
+          </div>
+          <h4 className="meet-me">Meet me</h4>
+          <div className="meet-up">
+            <p>East Texas</p>
+            <p>Lets go to meetups together!</p>
+          </div>
+          <p className="copyright">
+            &copy; Copyright {this.state.year} | Eric McKee
+          </p>
+        </footer>
       </main>
     );
   }

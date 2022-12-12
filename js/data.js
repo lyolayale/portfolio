@@ -2,7 +2,7 @@ const skills = [
   { skill: "HTML and CSS", id: 1 },
   { skill: "JavaScript", id: 2 },
   { skill: "React", id: 3 },
-  { skill: "Responsive Web Development", id: 4 },
+  { skill: "Responsive Web Design", id: 4 },
   { skill: "Photoshop", id: 5 },
   { skill: "Git and GitHub", id: 6 },
 ];
