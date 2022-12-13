@@ -658,20 +658,9 @@ footer .copyright {
   }
 
   .footer-wrapper {
-    /* display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; */
     padding-bottom: 40px;
     padding-top: 160px;
-    /* text-align: center; */
   }
-
-  /* footer h2 {
-    font-size: 40px;
-    padding-top: 160px;
-  } */
 
   footer .contact p,
   footer .meet-up p,
