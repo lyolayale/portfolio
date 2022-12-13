@@ -27,14 +27,6 @@ button {
   cursor: pointer;
 }
 
-.intro h1 {
-  font-size: 28px !important;
-}
-
-.intro h2 {
-  font-size: 20px;
-}
-
 h1,
 h2,
 h3,
@@ -111,11 +103,20 @@ nav li:hover {
   margin-bottom: 30px;
 }
 
+.intro h1 {
+  font-size: 28px !important;
+}
+
+.intro h2 {
+  font-size: 20px;
+}
+
 /* ================================== */
 /* ========== Project List ========== */
 /* ================================== */
 
 .project-list {
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -136,12 +137,12 @@ nav li:hover {
   justify-content: center;
   gap: 20px;
   align-items: left;
+  margin: auto;
   width: 95%;
 }
 
 .project h3 {
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .project img {
@@ -167,9 +168,9 @@ nav li:hover {
   margin-bottom: 30px;
 }
 
-.skill-set p {
+/* .skill-set p {
   margin: 0 auto 16px auto;
-}
+} */
 
 .skill-set span {
   font-weight: bold;
@@ -434,6 +435,9 @@ footer .copyright {
 /* ================================== */
 
 @media only screen and (min-width: 768px) {
+  header {
+    margin-bottom: 80px;
+  }
   nav {
     margin-bottom: 80px;
   }
@@ -445,9 +449,9 @@ footer .copyright {
     font-size: 16px;
   }
 
-  .intro {
+  /* .intro {
     margin-bottom: 80px;
-  }
+  } */
 
   .intro h1 {
     font-size: 40px !important;
@@ -459,8 +463,6 @@ footer .copyright {
   }
 
   .project-list {
-    width: 100%;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -483,7 +485,7 @@ footer .copyright {
     margin-bottom: 20px;
     width: 40%;
     max-width: 100%;
-    height: 100%;
+    height: 40%;
   }
 
   .project button {
@@ -516,7 +518,7 @@ footer .copyright {
     padding-bottom: 120px;
   }
 
-  .skills h3 {
+  .skills-wrapper h3 {
     font-size: 28px;
   }
 
@@ -562,5 +564,145 @@ footer .copyright {
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    margin-bottom: 140px;
+  }
+  nav {
+    margin: 50px auto;
+  }
+  nav ul {
+    justify-content: flex-end;
+  }
+
+  .intro {
+    margin-bottom: 40px;
+  }
+
+  .intro h1 {
+    font-size: 64px !important;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+  }
+
+  .project-list-wrapper {
+    width: 90%;
+    margin: 140px auto 80px auto;
+  }
+
+  .project-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* gap: 40px; */
+  }
+
+  .project-list-wrapper h2 {
+    font-size: 40px;
+  }
+  .project {
+    width: 31%;
+    gap: 40px;
+  }
+
+  .skills {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .skills-wrapper h3 {
+    font-size: 40px;
+  }
+
+  .developer-skills h4,
+  .tech-stack h4 {
+    margin-bottom: 30px;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 5rem;
+    width: 87%;
+    margin: 140px auto 160px auto;
+  }
+  .about-me-body {
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about-me-body h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .about-me-body h3 {
+    font-size: 32px;
+    text-align: justify;
+  }
+
+  .about-me-body p {
+    font-size: 20px;
+  }
+
+  .footer-wrapper {
+    /* display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; */
+    padding-bottom: 40px;
+    padding-top: 160px;
+    /* text-align: center; */
+  }
+
+  /* footer h2 {
+    font-size: 40px;
+    padding-top: 160px;
+  } */
+
+  footer .contact p,
+  footer .meet-up p,
+  footer .copyright {
+    font-size: 20px;
+  }
+
+  footer .copyright {
+    padding-bottom: 140px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .project-list-wrapper {
+    width: 90%;
+    margin: auto;
+  }
+
+  .project {
+    width: 28%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .project-list-wrapper {
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .project {
+    width: 31%;
   }
 }

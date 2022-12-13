@@ -23,7 +23,7 @@ class App extends React.Component {
         title: "Name Tag Generator",
         description:
           "This program is powered by the React Lifecycle Methods and in conjunction with the local storage methods, allowing the user to have fun creating and saving new name tags!",
-        skills: ["ES6", " JSX", " Data Flow Management"],
+        skills: ["ES6", " JSX", " Data Flow Management", " Event Listeners"],
         tools: ["CodeSandbox", " GitHub", " Commmand Line"],
         link: "https://y8cmmn.csb.app/",
         id: 2,
@@ -37,7 +37,7 @@ class App extends React.Component {
           "DOM Manipulation",
           " Vanilla JavaScript",
           " Async/Await",
-          "Event Listeners",
+          " Event Listeners",
         ],
         tools: ["GitHub", " GitHub Pages", " Command Line"],
         link: "https://lyolayale.github.io/guess-the-word/",
@@ -159,7 +159,7 @@ class App extends React.Component {
             <img src={this.state.me} alt="Profile Image" />
           </div>
           <section className="about-me-body">
-            <h2>Hello! I'm Eric McKee</h2>
+            <h2>Hello! I'm Eric McKee.</h2>
             <h3>
               I'm a Front End Web Developer with a passion for creating clean,
               responsive websites.
