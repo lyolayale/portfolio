@@ -80,11 +80,41 @@ class App extends React.Component {
         <header>
           <nav>
             <ul>
-              {this.state.nav.map(el => (
-                <li key={el.id}>
-                  <p>{el.item}</p>
-                </li>
-              ))}
+              {this.state.nav.map(el => {
+                if (el.item === "projects") {
+                  return (
+                    <li key={el.id}>
+                      <p>
+                        <a href="#projects">{el.item}</a>
+                      </p>
+                    </li>
+                  );
+                } else if (el.item === "skill") {
+                  return (
+                    <li key={el.id}>
+                      <p>
+                        <a href="#skill">{el.item}</a>
+                      </p>
+                    </li>
+                  );
+                } else if (el.item === "about") {
+                  return (
+                    <li key={el.id}>
+                      <p>
+                        <a href="#about">{el.item}</a>
+                      </p>
+                    </li>
+                  );
+                } else if (el.item === "contact me") {
+                  return (
+                    <li key={el.id}>
+                      <p>
+                        <a href="#contact-me">{el.item}</a>
+                      </p>
+                    </li>
+                  );
+                }
+              })}
             </ul>
           </nav>
 
@@ -98,7 +128,7 @@ class App extends React.Component {
         </header>
         {/* project list */}
         <section className="project-list-wrapper">
-          <h2>Projects</h2>
+          <h2 id="projects">Projects</h2>
           <div className="project-list">
             {this.state.projects.map(project => {
               return (
@@ -130,7 +160,7 @@ class App extends React.Component {
         </section>
         {/* skills */}
         <section className="skills-wrapper">
-          <h3>Skills</h3>
+          <h3 id="skill">Skills</h3>
           <div className="skills">
             <ul className="developer-skills">
               <h4>Developer Skills</h4>
@@ -159,7 +189,7 @@ class App extends React.Component {
             <img src={this.state.me} alt="Profile Image" />
           </div>
           <section className="about-me-body">
-            <h2>Hello! I'm Eric McKee.</h2>
+            <h2 id="about">Hello! I'm Eric McKee.</h2>
             <h3>
               I'm a Front End Web Developer with a passion for creating clean,
               responsive websites.
@@ -179,7 +209,7 @@ class App extends React.Component {
           </section>
         </section>
         <footer>
-          <h2>Let's Connect</h2>
+          <h2 id="contact-me">Let's Connect</h2>
           <div className="footer-wrapper">
             <section className="hire-me-container">
               <h3>Hire me</h3>
