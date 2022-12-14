@@ -67,7 +67,6 @@ header {
 }
 
 nav {
-  /* margin-top: 30px; */
   margin-bottom: 60px;
 }
 
@@ -132,12 +131,13 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 30px;
+  padding: 20px;
   margin: auto;
 }
 
 .project-list-wrapper h2 {
   font-size: 28px;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -152,6 +152,7 @@ nav li:hover {
 }
 
 .project h3 {
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -226,6 +227,14 @@ nav li:hover {
 
 .skills-wrapper {
   background-color: #e8eff7;
+  padding-bottom: 80px;
+}
+
+.skills-wrapper h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  padding-top: 16px;
+  text-align: center;
 }
 
 .skills {
@@ -234,16 +243,8 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 80px;
   gap: 40px;
   width: 100%;
-}
-
-.skills-wrapper h3 {
-  font-size: 28px;
-  padding-top: 80px;
-  text-align: center;
 }
 
 .skills h4 {
@@ -263,13 +264,14 @@ nav li:hover {
 .tech-stack h4 {
   margin-bottom: 20px;
 }
+
 .developer-skills p,
 .tech-stack p {
   position: relative;
   overflow: hidden;
   background: #e9b14c;
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   padding: 20px;
   width: 100%;
   min-width: 300px;
@@ -309,10 +311,9 @@ nav li:hover {
 /* ============================== */
 
 .about-me {
-  width: 100%;
-  /* background-color: #f8d697; */
-  padding-bottom: 80px;
   margin-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
 }
 
 .img-wrapper {
@@ -343,6 +344,7 @@ nav li:hover {
 .about-me-body h2 {
   font-size: 28px;
   margin-top: 40px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -384,8 +386,7 @@ footer h2 {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -414,12 +415,15 @@ footer .social-media {
   gap: 60px;
 }
 
-footer h2,
 footer .contact,
 footer .social-media,
 footer .meet-up,
 footer .copyright {
   margin-bottom: 30px;
+}
+
+footer h2 {
+  margin-bottom: 60px;
 }
 
 footer h2,
@@ -439,7 +443,7 @@ i {
 footer .copyright {
   font-size: 16px;
   text-align: center;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 /* ===================================================================================================================== */
@@ -452,7 +456,7 @@ footer .copyright {
   /* ============================ */
 
   header {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
   nav {
     margin-bottom: 80px;
@@ -471,10 +475,12 @@ footer .copyright {
 
   .intro h1 {
     font-size: 40px !important;
+    margin-bottom: 80px;
   }
 
   .intro h2 {
     font-size: 24px;
+    margin-bottom: 80px;
     width: 80%;
   }
 
@@ -501,8 +507,8 @@ footer .copyright {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 40px;
+    margin-bottom: 80px;
     width: 22rem;
     height: 40%;
   }
@@ -555,7 +561,7 @@ footer .copyright {
 
   .developer-skills h4,
   .tech-stack h4 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   /* ============================== */
@@ -589,6 +595,7 @@ footer .copyright {
 
   footer h2 {
     font-size: 32px;
+    margin-bottom: 80px;
     padding-top: 120px;
   }
 
@@ -597,6 +604,11 @@ footer .copyright {
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
+    padding-bottom: 80px;
+  }
+
+  footer .copyright {
+    padding-bottom: 80px;
   }
 }
 
