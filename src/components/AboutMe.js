@@ -13,7 +13,7 @@ function AboutMe(props) {
         <p>
           I've always been interested in computers but never thought I would
           actually learn how to do the whole computer thing, but here I am! Due
-          to the COVID situation a decided to go back to school and finish my
+          to the COVID situation I decided to go back to school and finish my
           bachelors degree due to being laid off, I felt so invigorated by
           obtaining my degree, I was like ... "What else can I do?" And, here we
           are folks, lol. When I'm not on the computer trying to learn or create
