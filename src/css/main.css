@@ -626,9 +626,7 @@ footer .copyright {
   header {
     margin-bottom: 140px;
   }
-  nav {
-    margin: 50px auto;
-  }
+
   nav ul {
     justify-content: flex-end;
   }
@@ -643,10 +641,12 @@ footer .copyright {
 
   .intro h1 {
     font-size: 64px !important;
+    margin-bottom: 0;
   }
 
   .intro h2 {
     font-size: 32px;
+    margin-top: 0;
   }
 
   /* ================================== */
@@ -669,6 +669,7 @@ footer .copyright {
 
   .project-list-wrapper h2 {
     font-size: 40px;
+    margin-top: 140px;
   }
   .project {
     width: 21rem;
@@ -679,9 +680,8 @@ footer .copyright {
   /* ========= skills ========== */
   /* =========================== */
 
-  .skills {
-    padding-top: 80px;
-    padding-bottom: 40px;
+  .skills-wrapper {
+    padding-bottom: 140px;
   }
 
   .skills-wrapper h3 {
@@ -719,11 +719,12 @@ footer .copyright {
 
   .about-me-body h2 {
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .about-me-body h3 {
     font-size: 32px;
+    margin-bottom: 40px;
     text-align: justify;
   }
 
@@ -735,9 +736,12 @@ footer .copyright {
   /* ========== Footer ========== */
   /* ============================ */
 
+  footer h2 {
+    padding-top: 160px;
+  }
+
   .footer-wrapper {
     padding-bottom: 40px;
-    padding-top: 160px;
   }
 
   footer .contact p,
