@@ -384,8 +384,8 @@ footer h2 {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  padding-bottom: 60px;
+  gap: 60px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -600,9 +600,9 @@ footer .copyright {
 
   .footer-wrapper {
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
-    gap: 40px;
+    /* gap: 40px; */
     padding-bottom: 80px;
   }
 

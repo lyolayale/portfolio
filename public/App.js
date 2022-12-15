@@ -54,7 +54,7 @@ class App extends React.Component {
         id: 4,
       },
       {
-        image: "./images/unplugged.png",
+        image: "./images/unplugged-1.png",
         title: "Unplugged",
         description:
           "This fun, multi-page website demonstrates how awesome CSS media queries and CSS Flex-box combined with the “mobile first” design pattern can work in harmony with each other!",

@@ -45,7 +45,7 @@ function Header(props) {
         <h1>Hello, I'm Eric McKee!</h1>
         <h2>
           I'm a Front End Web Developer who creates and designs beautiful,
-          memeorable websites and programs.
+          memorable websites and programs.
         </h2>
       </section>
     </header>
