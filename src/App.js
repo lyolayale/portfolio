@@ -1,7 +1,7 @@
 import React from "react";
 
 // ==========================
-// ===== internal files =====
+// ===== js component files =====
 // ==========================
 
 import AboutMe from "./components/AboutMe";
@@ -10,6 +10,13 @@ import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
 import Skills from "./components/Skills";
 import { skills, stack } from "./js/data";
+
+// =====================
+// ===== css files =====
+// =====================
+
+import "../src/css/main.css";
+import "../src/css/normalize.css";
 
 // ==================
 // ===== images =====
