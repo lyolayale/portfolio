@@ -2,7 +2,7 @@ function AboutMe(props) {
   return (
     <section className="about-me">
       <div className="img-wrapper">
-        <img src={props.me} alt="Profile Image" />
+        <img src={props.me} alt="Profile" />
       </div>
       <section className="about-me-body">
         <h2 id="about">Hello! I'm Eric McKee.</h2>
@@ -25,3 +25,5 @@ function AboutMe(props) {
     </section>
   );
 }
+
+export default AboutMe;

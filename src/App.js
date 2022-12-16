@@ -1,3 +1,27 @@
+import React from "react";
+
+// ==========================
+// ===== internal files =====
+// ==========================
+
+import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ProjectList from "./components/ProjectList";
+import Skills from "./components/Skills";
+import { skills, stack } from "./js/data";
+
+// ==================
+// ===== images =====
+// ==================
+
+import github from "./images/github-gallery.png";
+import word from "./images/guess-the-word-game.png";
+import name from "./images/name-tag-generator.png";
+import notes from "./images/sticky-notes.png";
+import unplugged from "./images/unplugged.png";
+import profile from "./images/profile.png";
+
 class App extends React.Component {
   state = {
     nav: [
@@ -8,7 +32,7 @@ class App extends React.Component {
     ],
     projects: [
       {
-        image: "./images/github-gallery.png",
+        image: github,
         title: "GitHub Repo Gallery",
         description:
           "This JavaScript powered interactive website allows a user to take a peek and search my GitHub repo! This is all made possible by async/await fetches to the awesome GitHub API!",
@@ -19,7 +43,7 @@ class App extends React.Component {
       },
 
       {
-        image: "./images/name-tag-generator.png",
+        image: name,
         title: "Name Tag Generator",
         description:
           "This program is powered by the React Lifecycle Methods and in conjunction with the local storage methods, allowing the user to have fun creating and saving new name tags!",
@@ -29,7 +53,7 @@ class App extends React.Component {
         id: 2,
       },
       {
-        image: "./images/guess-the-word-game.png",
+        image: word,
         title: "Guess the Word",
         description:
           "This JavaScript powered program uses async/await, JS methods and JS conditionals,  allowing  the user to have a fun and interactive time trying to guess the correct “word”!",
@@ -44,7 +68,7 @@ class App extends React.Component {
         id: 3,
       },
       {
-        image: "./images/sticky-notes.png",
+        image: notes,
         title: "Sticky Notes",
         description:
           "This JavaScript powered interactive website allows a user to take a peek and search my GitHub repo! This is all made possible by async/await fetches to the awesome GitHub API!",
@@ -54,7 +78,7 @@ class App extends React.Component {
         id: 4,
       },
       {
-        image: "./images/unplugged-1.png",
+        image: unplugged,
         title: "Unplugged",
         description:
           "This fun, multi-page website demonstrates how awesome CSS media queries and CSS Flex-box combined with the “mobile first” design pattern can work in harmony with each other!",
@@ -70,13 +94,14 @@ class App extends React.Component {
       },
     ],
     year: new Date().getFullYear(),
-    me: "./images/profile.png",
+    me: profile,
     skills,
     stack,
   };
   render() {
     return (
       <main>
+        <img src="../github-gallery.png" alt="" />
         <Header nav={this.state.nav} />
         <ProjectList projects={this.state.projects} />
         <Skills skills={this.state.skills} stack={this.state.stack} />
@@ -86,3 +111,5 @@ class App extends React.Component {
     );
   }
 }
+
+export default App;

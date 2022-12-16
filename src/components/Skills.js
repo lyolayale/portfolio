@@ -27,3 +27,5 @@ function Skills(props) {
     </section>
   );
 }
+
+export default Skills;

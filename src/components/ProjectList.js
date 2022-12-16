@@ -6,8 +6,8 @@ function ProjectList(props) {
         {props.projects.map(project => {
           return (
             <section key={project.id} className="project">
-              <a href={project.link} target="_blank">
-                <img src={project.image} alt="Project image" />
+              <a href={project.link} target="_blank" rel="noreferrer">
+                <img src={project.image} alt="Project" />
               </a>
               <h3>{project.title}</h3>
               <div className="project-description-wrapper">
@@ -23,7 +23,7 @@ function ProjectList(props) {
                   </p>
                 </div>
               </div>
-              <a href={project.link} target="_blank">
+              <a href={project.link} target="_blank" rel="noreferrer">
                 <button>Live Page</button>
               </a>
             </section>
@@ -33,3 +33,5 @@ function ProjectList(props) {
     </section>
   );
 }
+
+export default ProjectList;

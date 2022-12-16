@@ -51,3 +51,5 @@ function Header(props) {
     </header>
   );
 }
+
+export default Header;
