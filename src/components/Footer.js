@@ -7,7 +7,7 @@ function Footer(props) {
           <h3>Hire me</h3>
           <div className="contact">
             <p>281-536-3681</p>
-            <a href="https://mail.google.com">
+            <a href={props.email}>
               <p>lyolayale19@gmail.com</p>
             </a>
           </div>
@@ -15,10 +15,10 @@ function Footer(props) {
         <section className="follow-me-container">
           <h4 className="follow-me">Follow me</h4>
           <div className="social-media">
-            <a href="https://www.linkedin.com/in/eric-mckee-5768821ba">
+            <a href={props.linkedin}>
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/lyolayale">
+            <a href={props.githubLink}>
               <i className="fa-brands fa-github"></i>
             </a>
           </div>

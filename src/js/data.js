@@ -13,3 +13,7 @@ export const stack = [
   { skill: "Figma", id: 3 },
   { skill: "Shopify", id: 4 },
 ];
+
+export const email = "https://mail.google.com";
+export const linkedin = "https://www.linkedin.com/in/eric-mckee-5768821ba";
+export const githubLink = "https://github.com/lyolayale";

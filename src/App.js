@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ProjectList from "./components/ProjectList";
 import Skills from "./components/Skills";
-import { skills, stack } from "./js/data";
+import { skills, stack, email, linkedin, githubLink } from "./js/data";
 
 // =====================
 // ===== css files =====
@@ -104,6 +104,9 @@ class App extends React.Component {
     me: profile,
     skills,
     stack,
+    email,
+    linkedin,
+    githubLink,
   };
   render() {
     return (
@@ -113,7 +116,12 @@ class App extends React.Component {
         <ProjectList projects={this.state.projects} />
         <Skills skills={this.state.skills} stack={this.state.stack} />
         <AboutMe me={this.state.me} />
-        <Footer year={this.state.year} />
+        <Footer
+          year={this.state.year}
+          email={this.state.email}
+          linkedin={this.state.linkedin}
+          githubLink={this.state.githubLink}
+        />
       </main>
     );
   }
