@@ -78,7 +78,7 @@ class App extends React.Component {
         image: notes,
         title: "Sticky Notes",
         description:
-          "This React.js driven program is designed with class and functional based components, implemented by the React lifecycle methods; allowing a user to edit, add, delete and save stick notes!",
+          "This React.js driven program is designed with class and functional based components, implemented by the React lifecycle methods; allowing a user to modify the stick notes!",
         skills: ["ES6", " JSX", " Data Flow Management", " Command Line"],
         tools: ["CodeSandbox", " GitHub", " Command Line"],
         link: "https://tmeer1.csb.app/",
