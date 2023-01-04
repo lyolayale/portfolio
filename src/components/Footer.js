@@ -15,10 +15,10 @@ function Footer(props) {
         <section className="follow-me-container">
           <h4 className="follow-me">Follow me</h4>
           <div className="social-media">
-            <a href={props.linkedin}>
+            <a href={props.linkedin} target="_blank">
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href={props.githubLink}>
+            <a href={props.githubLink} target="_blank">
               <i className="fa-brands fa-github"></i>
             </a>
           </div>
