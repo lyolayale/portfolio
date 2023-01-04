@@ -42,10 +42,12 @@ function Header(props) {
       </nav>
 
       <section className="intro">
-        <h1>Hello, I'm Eric McKee!</h1>
+        <h1>
+          Hello, I'm <span className="my-name">Eric McKee</span>!
+        </h1>
         <h2>
-          I'm a Front End Web Developer who creates and designs beautiful,
-          memorable websites and programs.
+          <span className="job-title">Front End Web Developer</span> who creates
+          and designs beautiful, memorable websites and programs.
         </h2>
       </section>
     </header>

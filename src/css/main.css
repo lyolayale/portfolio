@@ -36,6 +36,16 @@ a {
   color: #000;
 }
 
+a i {
+  transition: all 0.5s;
+  text-shadow: 0 10px 5px rgba(45, 45, 45, 0.7);
+}
+
+a i:hover {
+  transform: translate(0, 10px);
+  text-shadow: 0 0 0 transparent;
+}
+
 h1,
 h2,
 h3,
@@ -117,8 +127,18 @@ nav li:hover {
   font-size: 28px !important;
 }
 
+.my-name {
+  text-shadow: 0 5px 5px rgba(45, 45, 45, 0.7);
+}
+
 .intro h2 {
   font-size: 20px;
+}
+
+.job-title {
+  font-size: 2rem;
+  text-shadow: 0 5px 5px rgba(45, 45, 45, 0.7);
+  animation: jobTitle 0.5s linear;
 }
 
 /* ================================== */
@@ -484,6 +504,10 @@ footer .copyright {
     width: 80%;
   }
 
+  .job-title {
+    font-size: 2.2rem;
+  }
+
   /* ================================== */
   /* ========== Project List ========== */
   /* ================================== */
@@ -614,6 +638,10 @@ footer .copyright {
 @media only screen and (min-width: 992px) {
   .project {
     width: 25rem;
+  }
+
+  .job-title {
+    font-size: 2.5rem;
   }
 }
 
@@ -761,5 +789,14 @@ footer .copyright {
 
   .project {
     width: 25rem;
+  }
+}
+
+@keyframes jobTitle {
+  0% {
+    font-size: 0.5rem;
+  }
+  100% {
+    font-size: 2.5rem;
   }
 }
