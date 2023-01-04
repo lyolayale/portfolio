@@ -43,7 +43,7 @@ function Header(props) {
 
       <section className="intro">
         <h1>
-          Hello, I'm <span className="my-name">Eric McKee</span>!
+          Hello, I'm <span className="header my-name">Eric McKee</span>!
         </h1>
         <h2>
           <span className="job-title">Front End Web Developer</span> who creates
