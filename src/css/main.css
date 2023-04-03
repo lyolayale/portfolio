@@ -180,6 +180,7 @@ nav li:hover {
 }
 
 .project img {
+  max-height: 10rem;
   border-radius: 5px;
   width: 100%;
   object-fit: cover;
