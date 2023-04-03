@@ -28,6 +28,7 @@ import name from "./images/name-tag-generator.png";
 import notes from "./images/sticky-notes.png";
 import unplugged from "./images/unplugged.png";
 import profile from "./images/profile.png";
+import noteCard from "./images/note-card.png";
 
 class App extends React.Component {
   state = {
@@ -98,6 +99,21 @@ class App extends React.Component {
         tools: ["Photoshop", " Photopea", " GitHub"],
         link: "https://lyolayale.github.io/unplugged/",
         id: 5,
+      },
+      {
+        image: noteCard,
+        title: "Note Card App",
+        description:
+          "This mobile responsive note card appliation is power by React.js and utilizes local storage to save any changes made. Enjoy making notes and reminder in with this eye pleasing application",
+        skills: [
+          "ES6",
+          " React.js",
+          " Responsive Design",
+          " Local Storage API",
+        ],
+        tools: ["GitHub", " GitHub Pages", " Command Line"],
+        link: "https://lyolayale.github.io/github-note_card/",
+        id: 6,
       },
     ],
     year: new Date().getFullYear(),
