@@ -119,7 +119,7 @@ class App extends React.Component {
         image: noteCard,
         title: "Note Card App",
         description:
-          "This mobile responsive note card appliation is power by React.js and utilizes local storage to save any changes made. Enjoy making notes and reminder in with this eye pleasing application.",
+          "This mobile responsive note card appliation is powered by React.js and JSX. Enjoy making notes and reminders with this eye pleasing application.",
         skills: [
           "ES6",
           " React.js",
