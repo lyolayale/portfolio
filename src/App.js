@@ -121,12 +121,7 @@ class App extends React.Component {
         title: "Note Card App",
         description:
           "This mobile responsive note card appliation is powered by React.js and JSX. Enjoy making notes and reminders with this eye pleasing application.",
-        skills: [
-          "ES6",
-          " React.js",
-          " Responsive Design",
-          " Local Storage API",
-        ],
+        skills: ["ES6", " React.js", " Responsive Design", " CSS/Flexbox"],
         tools: ["GitHub", " GitHub Pages", " Command Line"],
         link: "https://lyolayale.github.io/note_card/",
         id: 6,
