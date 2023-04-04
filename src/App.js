@@ -31,6 +31,7 @@ import profile from "./images/profile.png";
 import noteCard from "./images/note-card.png";
 import tenzie from "./images/tenzie.png";
 import airBnb from "./images/air-bnb.png";
+import meme from "./images/meme.png";
 
 class App extends React.Component {
   state = {
@@ -67,13 +68,13 @@ class App extends React.Component {
         id: 1,
       },
       {
-        image: notes,
-        title: "Sticky Notes",
+        image: meme,
+        title: "Meme Generator",
         description:
-          "This React.js driven program is designed with class and functional based components, implemented by the React lifecycle methods; allowing a user to modify the stick notes!",
+          "This React.js driven program is designed with intriguing CSS animations while implementing modern React hooks; allowing a user to enjoy sifting through memes.",
         skills: ["ES6", " JSX", " Data Flow Management", " Command Line"],
-        tools: ["CodeSandbox", " GitHub", " Command Line"],
-        link: "https://tmeer1.csb.app/",
+        tools: ["VS Code", " GitHub", " Command Line"],
+        link: "https://lyolayale.github.io/meme-generator/",
         id: 4,
       },
       {
