@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eb3b71a6.css",
-    "main.js": "/portfolio/static/js/main.11f038e0.js",
-    "static/media/note-card.png": "/portfolio/static/media/note-card.85550d8d73c33fa1bd68.png",
-    "static/media/tenzie.png": "/portfolio/static/media/tenzie.49296ef3798a815b637e.png",
-    "static/media/unplugged.png": "/portfolio/static/media/unplugged.7fd68a7f7c3cd3bdf0fd.png",
+    "main.js": "/portfolio/static/js/main.28919fac.js",
+    "static/media/note-card.png": "/portfolio/static/media/note-card.14b5f1ca6dce7b4115c6.png",
+    "static/media/tenzie.png": "/portfolio/static/media/tenzie.503e510bb05652fb44e4.png",
+    "static/media/unplugged.png": "/portfolio/static/media/unplugged.a783fc66783f4e700e55.png",
     "static/media/profile.png": "/portfolio/static/media/profile.31edad4d5c7f19b6a191.png",
     "static/media/guess-the-word-game.png": "/portfolio/static/media/guess-the-word-game.0423babc06a10ed06c34.png",
     "static/media/github-gallery.png": "/portfolio/static/media/github-gallery.41ffb2b0a2400455a336.png",
@@ -12,10 +12,10 @@
     "static/media/sticky-notes.png": "/portfolio/static/media/sticky-notes.c9ba994e37b7b80f8a6d.png",
     "index.html": "/portfolio/index.html",
     "main.eb3b71a6.css.map": "/portfolio/static/css/main.eb3b71a6.css.map",
-    "main.11f038e0.js.map": "/portfolio/static/js/main.11f038e0.js.map"
+    "main.28919fac.js.map": "/portfolio/static/js/main.28919fac.js.map"
   },
   "entrypoints": [
     "static/css/main.eb3b71a6.css",
-    "static/js/main.11f038e0.js"
+    "static/js/main.28919fac.js"
   ]
 }
