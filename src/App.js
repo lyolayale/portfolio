@@ -44,7 +44,7 @@ class App extends React.Component {
         image: tenzie,
         title: "Tenzies Game",
         description:
-          "This mobile responsive Tenzie game is power by React.js. Have fun matching the numbers and enjoy experiencing the cool CSS effects.   ",
+          "This mobile responsive Tenzie game is power by React.js with modern React hooks. Have fun matching the numbers and enjoy experiencing the cool CSS effects. ",
         skills: [
           "ES6",
           " React.js",
