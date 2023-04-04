@@ -29,6 +29,7 @@ import notes from "./images/sticky-notes.png";
 import unplugged from "./images/unplugged.png";
 import profile from "./images/profile.png";
 import noteCard from "./images/note-card.png";
+import tenzie from "./images/tenzie.png";
 
 class App extends React.Component {
   state = {
@@ -40,6 +41,21 @@ class App extends React.Component {
     ],
     projects: [
       {
+        image: tenzie,
+        title: "Tenzies Game",
+        description:
+          "This mobile responsive Tenzie game is power by React.js. Have fun matching the numbers and enjoy experiencing the cool CSS effects.   ",
+        skills: [
+          "ES6",
+          " React.js",
+          " Responsive Design",
+          " Local Storage API",
+        ],
+        tools: ["GitHub", " GitHub Pages", " Command Line"],
+        link: "https://lyolayale.github.io/note_card/",
+        id: 7,
+      },
+      {
         image: github,
         title: "GitHub Repo Gallery",
         description:
@@ -48,6 +64,16 @@ class App extends React.Component {
         tools: ["GitHub", " GitHub Pages", " Command Line"],
         link: "https://lyolayale.github.io/github-repo-gallery/",
         id: 1,
+      },
+      {
+        image: notes,
+        title: "Sticky Notes",
+        description:
+          "This React.js driven program is designed with class and functional based components, implemented by the React lifecycle methods; allowing a user to modify the stick notes!",
+        skills: ["ES6", " JSX", " Data Flow Management", " Command Line"],
+        tools: ["CodeSandbox", " GitHub", " Command Line"],
+        link: "https://tmeer1.csb.app/",
+        id: 4,
       },
 
       {
@@ -75,16 +101,7 @@ class App extends React.Component {
         link: "https://lyolayale.github.io/guess-the-word/",
         id: 3,
       },
-      {
-        image: notes,
-        title: "Sticky Notes",
-        description:
-          "This React.js driven program is designed with class and functional based components, implemented by the React lifecycle methods; allowing a user to modify the stick notes!",
-        skills: ["ES6", " JSX", " Data Flow Management", " Command Line"],
-        tools: ["CodeSandbox", " GitHub", " Command Line"],
-        link: "https://tmeer1.csb.app/",
-        id: 4,
-      },
+
       {
         image: unplugged,
         title: "Unplugged",
@@ -104,7 +121,7 @@ class App extends React.Component {
         image: noteCard,
         title: "Note Card App",
         description:
-          "This mobile responsive note card appliation is power by React.js and utilizes local storage to save any changes made. Enjoy making notes and reminder in with this eye pleasing application",
+          "This mobile responsive note card appliation is power by React.js and utilizes local storage to save any changes made. Enjoy making notes and reminder in with this eye pleasing application.",
         skills: [
           "ES6",
           " React.js",
