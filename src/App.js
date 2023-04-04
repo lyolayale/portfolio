@@ -52,7 +52,7 @@ class App extends React.Component {
           " Local Storage API",
         ],
         tools: ["GitHub", " GitHub Pages", " Command Line"],
-        link: "https://lyolayale.github.io/note_card/",
+        link: "https://lyolayale.github.io/tenzie/",
         id: 7,
       },
       {
