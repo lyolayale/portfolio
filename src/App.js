@@ -75,7 +75,6 @@ class App extends React.Component {
         link: "https://tmeer1.csb.app/",
         id: 4,
       },
-
       {
         image: name,
         title: "Name Tag Generator",
@@ -101,7 +100,6 @@ class App extends React.Component {
         link: "https://lyolayale.github.io/guess-the-word/",
         id: 3,
       },
-
       {
         image: unplugged,
         title: "Unplugged",
