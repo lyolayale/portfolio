@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eb3b71a6.css",
-    "main.js": "/portfolio/static/js/main.28919fac.js",
+    "main.js": "/portfolio/static/js/main.fd3267ae.js",
     "static/media/note-card.png": "/portfolio/static/media/note-card.14b5f1ca6dce7b4115c6.png",
     "static/media/tenzie.png": "/portfolio/static/media/tenzie.503e510bb05652fb44e4.png",
+    "static/media/air-bnb.png": "/portfolio/static/media/air-bnb.060556454b3919ec88f2.png",
     "static/media/unplugged.png": "/portfolio/static/media/unplugged.a783fc66783f4e700e55.png",
     "static/media/profile.png": "/portfolio/static/media/profile.31edad4d5c7f19b6a191.png",
     "static/media/guess-the-word-game.png": "/portfolio/static/media/guess-the-word-game.0423babc06a10ed06c34.png",
@@ -12,10 +13,10 @@
     "static/media/sticky-notes.png": "/portfolio/static/media/sticky-notes.c9ba994e37b7b80f8a6d.png",
     "index.html": "/portfolio/index.html",
     "main.eb3b71a6.css.map": "/portfolio/static/css/main.eb3b71a6.css.map",
-    "main.28919fac.js.map": "/portfolio/static/js/main.28919fac.js.map"
+    "main.fd3267ae.js.map": "/portfolio/static/js/main.fd3267ae.js.map"
   },
   "entrypoints": [
     "static/css/main.eb3b71a6.css",
-    "static/js/main.28919fac.js"
+    "static/js/main.fd3267ae.js"
   ]
 }
