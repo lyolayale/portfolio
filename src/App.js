@@ -30,6 +30,7 @@ import unplugged from "./images/unplugged.png";
 import profile from "./images/profile.png";
 import noteCard from "./images/note-card.png";
 import tenzie from "./images/tenzie.png";
+import airBnb from "./images/air-bnb.png";
 
 class App extends React.Component {
   state = {
@@ -129,6 +130,21 @@ class App extends React.Component {
         tools: ["GitHub", " GitHub Pages", " Command Line"],
         link: "https://lyolayale.github.io/note_card/",
         id: 6,
+      },
+      {
+        image: airBnb,
+        title: "Mini AirBnb Clone",
+        description:
+          "This mini AirBnb Clone is built with React.js and JSX. This simple, yet elegant website is mobile responsive and due to the CSS implentations, it feels warm and easy on the eyes.",
+        skills: [
+          "ES6",
+          " React.js",
+          " Responsive Design",
+          " Local Storage API",
+        ],
+        tools: ["GitHub", " GitHub Pages", " Command Line"],
+        link: "https://lyolayale.github.io/mini-airbnb-clone/",
+        id: 8,
       },
     ],
     year: new Date().getFullYear(),
