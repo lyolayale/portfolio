@@ -7,8 +7,8 @@ function AboutMe(props) {
       <section className="about-me-body">
         <h2 id="about">Hello! I'm Eric McKee.</h2>
         <h3>
-          I'm a Front End Web Developer with a passion for creating clean,
-          responsive websites.
+          I'm a Web Developer with a passion for creating clean, responsive
+          websites.
         </h3>
         <p>
           I'm a <span className="my-name">Front End Deveolper </span> that has
